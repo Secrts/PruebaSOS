@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Prueba SOS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <nav class="contenedor2">
+            <ul>
+                <li class="a">Inicio</li>
+                <li class="a">Sobre nosotros</li>
+                <li class="a">Contacto</li>
+            </ul>
+        </nav>
+        <header>
+            <div class="titulo">
+                <h1>Bienvenidos</h1>
+            </div>
+        </header>
+        <div class="formulario">
+            <section class="registro">
+                <br>
+                <h1 class="registro2">Registro</h1>
+                <br>
+                <br>
+                <form action="" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Introduce tu nombre" required class="form-control" name="nombre">
+                    <br>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" placeholder="Introduce tu apellido" required class="form-control" name="apellido">
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Introduce tu Email" required class="form-control" name="Email">
+                    <br>
+
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" placeholder="Introduce tu numero de telefono" required class="form-control" name="telefono">
+                    <br>
+
+                    <label for="Programa">Programa</label>
+                    <select name="ElecPrograma" id="Elecprograma">
+                        <option value="Bachillerato">Bachillerato</option>
+                        <option value="Ingles">Ingles</option>
+                        <option value="Preicfres">Preicfes</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input class="boton" type="submit" value="Registrar">
+                    <br>
+                    <br>
+                </form>
+            </section>
+            <section class="Reporte">
+                <br>
+                <h1 >Reporte</h1>
+                <br>
+                <input type="text" id="filtro" placeholder="Filtrar por nombre">
+                <button onclick="filtrarLeads()">Filtrar</button>
+                <br>
+                <br>
+                <table class="tabla" id="tabla" name="tabla" width="600" border="2" cellspacing="3" cellpadding="3" style="font-size: 10pt">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Telefono</th>
+                            <th>Programa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads">
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <br>
+        <br>
+        <p>Copyright &copy; 2023 - Todos los derechos reservados</p>
+    </footer>
+    <script src="../js/leads.js"></script>
+</body>
+</html>
